@@ -1,0 +1,53 @@
+import random
+def rsk():
+    while True:
+        choices = ["rock", "paper", "scissors"]
+
+        computer = random.choice(choices)
+
+        player = None
+        while player not in choices:
+            player = input("rock,paper,scissors?").lower()
+
+        if player == computer:
+            print("player", player)
+            print("computer", computer)
+            print("Tie!")
+        elif player == "rock":
+            if computer == "scissors":
+                print("player", player)
+                print("computer", computer)
+                print("win!")
+            if computer == "paper":
+                print("player", player)
+                print("computer", computer)
+                print("lose!")
+        elif player == "paper":
+            if computer == "scissors":
+                print("player", player)
+                print("computer", computer)
+                print("lose!")
+            if computer == "rock":
+                print("player", player)
+                print("computer", computer)
+                print("win!")
+        elif player == "scissors":
+            if computer == "paper":
+                print("player", player)
+                print("computer", computer)
+                print("win!")
+            if computer == "rock":
+                print("player", player)
+                print("computer", computer)
+                print("lose!")
+        playagain=input("yes/no?").lower()
+
+        if playagain != "yes":
+            break
+    print("bye!")
+
+
+
+
+
+
