@@ -1,0 +1,27 @@
+class Animal:
+    alive= True
+
+    def eat(self):
+        print("eating")
+    def sleep(self):
+        print("sleeping")
+
+class rabbit(Animal):
+    def run(self):
+        print("running")
+class fish(Animal):
+    def swim(self):
+        print("swimming")
+class hawk(Animal):
+    def fly(self):
+        print("flying")
+Rabbit=rabbit()
+Fish=fish()
+Hawk=hawk()
+
+print(rabbit.alive)
+Hawk.sleep()
+Fish.eat()
+Rabbit.run()
+Fish.swim()
+Hawk.fly()
